@@ -3,7 +3,7 @@ const token = process.env.TELEGRAM_BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
 bot.onText(/\/start/, (msg) => {
-    bot.sendMessage(msg.chat.id, 'Welcome! Use /play to start.');
+    bot.sendMessage(msg.chat.id, 'Welcome to the simulator! Use /signal to get a practice signal.');
 });
 
 bot.onText(/\/play/, (msg) => {
